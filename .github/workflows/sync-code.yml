@@ -10,7 +10,7 @@ jobs:
     runs-on: self-hosted
     steps:
       - name: checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
-          path: .
+          path: ~
           clean: true
