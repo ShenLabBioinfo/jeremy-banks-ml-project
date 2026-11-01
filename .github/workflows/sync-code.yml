@@ -12,5 +12,5 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v4
         with:
+          path: .
           clean: true
-          fetch-depth: 0
