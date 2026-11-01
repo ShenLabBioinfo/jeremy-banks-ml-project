@@ -2,8 +2,6 @@ name: sync code
 
 on:
   push:
-    # branches:
-    #   - '**'
 
 jobs:
   sync-code:
@@ -12,5 +10,8 @@ jobs:
       - name: checkout code
         uses: actions/checkout@v7
         with:
-          path: ../..
           clean: true
+
+      - name: create symlink
+        # run: ln -sfn "$GITHUB_WORKSPACE" "$HOME/${{ github.event.repository.name }}"
+        run: ln -sfn "$GITHUB_WORKSPACE" "$HOME/${{ github.event.repository.name }}"
