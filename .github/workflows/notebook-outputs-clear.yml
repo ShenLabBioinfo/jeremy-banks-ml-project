@@ -30,7 +30,6 @@ jobs:
           commit_options: '--amend --no-edit'
           file_pattern: '*.ipynb'
           push_options: '--force'
-          skip_fetch: true
 
       - name: clean repo
         run: git clean -ffdx
