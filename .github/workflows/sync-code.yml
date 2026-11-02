@@ -13,5 +13,4 @@ jobs:
           clean: true
 
       - name: create symlink
-        # run: ln -sfn "$GITHUB_WORKSPACE" "$HOME/${{ github.event.repository.name }}"
         run: ln -sfn "$GITHUB_WORKSPACE" "$HOME/${{ github.event.repository.name }}"
